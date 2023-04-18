@@ -13,8 +13,8 @@ import random
 max_rand = 20
 lenth_array_1 = int(input ("Введите длину массива 1: "))
 lenth_array_2 = int(input ("Введите длину массива 2: "))
-array_1 = [random.randrange(1, max_rand, 1) for i in range(lenth_array_1)]
-array_2 = [random.randrange(1, max_rand, 1) for i in range(lenth_array_2)]
+array_1 = [int(input (f'Введите {i} элемент множества 1: ')) for i in range(lenth_array_1)]
+array_2 = [int(input (f'Введите {i} элемент множества 2: ')) for i in range(lenth_array_2)]
 print(array_1)
 print(array_2)
 print (sorted(set(array_1).intersection(set(array_2))))
